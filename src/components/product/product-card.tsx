@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Card, CardContent, CardHeader } from "../ui/card";
 import { ProductModel } from "@/types/product";
-import AddToCart from "../cart/add-to-card";
+import AddToCart from "../cart/add-to-cart";
 
 const ProductCard = ({ product }: { product: ProductModel }) => {
   return (

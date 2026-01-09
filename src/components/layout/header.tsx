@@ -1,7 +1,5 @@
 import Link from "next/link";
-import React from "react";
-import { Button } from "../ui/button";
-import { ShoppingCart } from "lucide-react";
+import CartDrawer from "../cart/cart-drawer";
 
 const Header = () => {
   return (
@@ -11,10 +9,7 @@ const Header = () => {
           <Link href="/">
             <h2 className="text-primary font-semibold text-xl">Wege Test</h2>
           </Link>
-          <Button variant="ghost">
-            <ShoppingCart />
-            Your Cart
-          </Button>
+          <CartDrawer />
         </div>
       </div>
     </header>
