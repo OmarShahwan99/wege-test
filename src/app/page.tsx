@@ -1,6 +1,5 @@
 import Categories from "@/components/home/categories";
 import Products from "@/components/home/products";
-import PriceRangeSlider from "@/components/product/price-range-slider";
 import ProductsSkeleton from "@/components/product/products-skeleton";
 import SearchProduct from "@/components/product/search-product";
 import { Suspense } from "react";
