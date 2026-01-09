@@ -9,10 +9,9 @@ It is a modern e-commerce-like project with features like product listing, searc
 
 1. [Getting Started](#getting-started)
 2. [Tech Choices](#tech-choices)
-3. [Features](#features)
-4. [Bonus Features](#bonus-features)
-5. [Learn More](#learn-more)
-6. [Deploy on Vercel](#deploy-on-vercel)
+3. [Bonus Features](#bonus-features)
+4. [Learn More](#learn-more)
+5. [Deploy on Vercel](#deploy-on-vercel)
 
 ---
 
