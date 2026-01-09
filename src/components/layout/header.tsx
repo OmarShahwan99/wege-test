@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <header className="sticky top-0 z-50">
       <div className=" shadow bg-white">
-        <div className="container mx-auto py-3 flex items-center justify-between">
+        <div className="px-5 container mx-auto py-3 flex items-center justify-between">
           <Link href="/">
             <h2 className="text-primary font-semibold text-xl">Wege Test</h2>
           </Link>

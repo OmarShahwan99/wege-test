@@ -12,7 +12,7 @@ export default async function ProductPage({
   const product = await getProduct(id);
   if (!product) notFound();
   return (
-    <section className="py-12">
+    <section className="py-12 px-5">
       <div className="container mx-auto">
         <div className="pt-12 flex flex-col lg:flex-row gap-10">
           <div className="basis-full lg:basis-[40%]">
