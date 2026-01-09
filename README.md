@@ -11,7 +11,6 @@ It is a modern e-commerce-like project with features like product listing, searc
 2. [Tech Choices](#tech-choices)
 3. [Bonus Features](#bonus-features)
 4. [Learn More](#learn-more)
-5. [Deploy on Vercel](#deploy-on-vercel)
 
 ---
 
