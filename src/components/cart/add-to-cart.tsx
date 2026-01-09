@@ -6,9 +6,15 @@ import { ProductModel } from "@/types/product";
 import { Minus, Plus, ShoppingCart } from "lucide-react";
 import { MouseEvent } from "react";
 
-const AddToCart = ({ id, title, price, thumbnail }: ProductModel) => {
+interface Props {
+  product: ProductModel;
+  isDetails?: boolean;
+}
+
+const AddToCart = ({ product, isDetails = false }: Props) => {
   const hydrated = useHydrated();
   const { items, addItem, increase, decrease } = useCartStore();
+  const { id, title, price, thumbnail } = product;
 
   if (!hydrated) return null;
 
@@ -16,22 +22,26 @@ const AddToCart = ({ id, title, price, thumbnail }: ProductModel) => {
 
   const handleAddToCart = (e: MouseEvent) => {
     e.stopPropagation();
+    e.preventDefault();
     addItem({ id, title, price, thumbnail });
   };
 
   const handleIncrease = (e: MouseEvent) => {
     e.stopPropagation();
+    e.preventDefault();
     increase(id);
   };
   const handleDecrease = (e: MouseEvent) => {
     e.stopPropagation();
+    e.preventDefault();
     decrease(id);
   };
   return (
     <>
       {!cartItem ? (
-        <Button size="icon" onClick={handleAddToCart}>
+        <Button size={isDetails ? "default" : "icon"} onClick={handleAddToCart}>
           <ShoppingCart />
+          {isDetails && "Add To Cart"}
         </Button>
       ) : (
         <div className="flex items-center gap-2">

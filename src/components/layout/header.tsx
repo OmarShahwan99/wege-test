@@ -3,7 +3,7 @@ import CartDrawer from "../cart/cart-drawer";
 
 const Header = () => {
   return (
-    <header>
+    <header className="sticky top-0 z-50">
       <div className=" shadow bg-white">
         <div className="container mx-auto py-3 flex items-center justify-between">
           <Link href="/">

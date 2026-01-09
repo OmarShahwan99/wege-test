@@ -13,7 +13,7 @@ const Products = ({ q, category }: { q?: string; category?: string }) => {
     return <AppEmpty title="No Products Found" />;
 
   return (
-    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
       {filteredProducts.map((p) => (
         <ProductCard product={p} key={p.id} />
       ))}
